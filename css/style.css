@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #660027;
+}
+
+body {
+  background-color: #660027;
+}
+
+a {
+  -webkit-transition: all .1s;
+  transition: all .1s;
+}
+
+.wrapper {
+  max-width: 850px;
+  margin: 20px auto;
+}
+
+/*MENU ALL*/
+
+.header {
+  height: 100px;
+  margin: 20px auto;
+  padding: 10px 20px 0 20px;
+  background-color: #f9f5c8;
+  border-radius: 20px;
+}
+
+.header_img-big {
+  display: none;
+}
+
+.header_img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.menu {
+  background: #f9f5c8;
+  border-radius: 10px;
+}
+
+/*DROPDOWN MENU*/
+
+.menu_dropdown {
+  width: 245px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  list-style: none;
+  text-align: center;
+}
+
+.menu_dropdown-home .menu_link-dropdown {
+  margin: 0;
+  display: block;
+  line-height: 45px;
+  color: #660027;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu_dropdown-home:hover {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  left: -1px;
+  width: 245px;
+  z-index: 1;
+  list-style-type: none;
+}
+
+.submenu .menu_item-submenu {
+  float: none;
+}
+
+.submenu .menu_link-dropdown {
+  margin: 0;
+  line-height: 40px;
+  background: rgba(249, 245, 200, 0.8);
+  border-bottom: 1px solid #660027;
+}
+
+.menu_dropdown-home:hover .submenu {
+  display: block;
+}
+
+.menu_dropdown-home:hover span {
+  display: none;
+}
+
+.submenu .menu_link-dropdown:hover {
+  display: block;
+  background: #660027;
+  color: #f9f5c8;
+  text-decoration: none;
+}
+
+.menu_main {
+  display: none;
+}
+
+.content {
+  margin: 50px auto;
+  padding-bottom: 70px;
+  background: #f9f5c8;
+  border-radius: 5px;
+}
+
+.counter {
+  margin-top: 50px;
+}
+
+/*HOME*/
+
+.main_img {
+  width: 290px;
+}
+
+.main_content {
+  text-align: justify;
+  padding: 20px 20px 0 20px;
+  text-indent: 20px;
+  line-height: 30px;
+}
+
+.list {
+  padding: 0 10px 0 30px;
+}
+
+.glyphicon {
+  color: #660027;
+  padding-right: 10px;
+}
+
+.servise_list {
+  margin: 10px;
+  list-style-type: none;
+  line-height: 25px;
+}
+
+.end_content {
+  padding: 40px 30px 0 0;
+  font-weight: bold;
+  text-align: right;
+}
+
+/*ABOUT*/
+
+.about_text {
+  padding: 10px 20px;
+  text-align: justify;
+  text-indent: 20px;
+  line-height: 25px;
+}
+
+.about_text span {
+  font-weight: bold;
+}
+
+.about_head {
+  padding-left: 40px;
+}
+
+/*NEWS*/
+
+/*PRICE*/
+
+.price_header {
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.price_table {
+  width: 95%;
+  margin: 0 20px;
+  text-align: center;
+  border-collapse: collapse;
+  line-height: 35px;
+}
+
+tr, th, td {
+  border: 2px solid #660027;
+}
+
+th {
+  text-align: center;
+}
+
+.price_text {
+  padding: 10px 40px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.price_info {
+  color: red;
+}
+
+.price_text_bold {
+  font-weight: bold;
+}
+
+.price_text_bold span {
+  text-decoration: underline;
+}
+
+.price_text_italic {
+  font-style: italic;
+  font-weight: bold;
+  text-align: right;
+}
+
+/*CONTACTS*/
+
+.contact_img {
+  margin: 15px;
+  width: 100px;
+}
+
+.contacts {
+  padding: 10px 0 0 20px;
+}
+
+.contact_list {
+  margin-bottom: 10px;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+@media (min-width: 415px) {
+  /*MENU ALL*/
+
+  .header {
+    height: 100px;
+    margin: 20px auto;
+    padding: 25px 20px 0 20px;
+    background-color: #f9f5c8;
+    border-radius: 20px;
+  }
+
+  .header_img-big {
+    display: inline-block;
+  }
+
+  .header_img {
+    display: none;
+  }
+
+  .menu_dropdown {
+    display: none;
+  }
+
+  .menu_main {
+    text-align: center;
+    display: block;
+  }
+
+  .menu_item {
+    display: inline-block;
+    list-style: none;
+  }
+
+  .menu_link {
+    display: block;
+    line-height: 30px;
+    padding: 0 5px;
+    color: #660027;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .menu_link:hover {
+    background: #660027;
+    color: #f9f5c8;
+    text-decoration: none;
+  }
+
+  /*CONTACTS*/
+
+  .contact_list {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 668px) {
+  /*MENU ALL*/
+  .header_img-big {
+    padding-left: 30px;
+  }
+
+  .menu_link {
+    padding: 0 20px;
+  }
+
+  .main_img {
+    width: 330px;
+  }
+
+  .main_img {
+    float: left;
+    padding-right: 30px;
+  }
+
+  /*CONTACTS*/
+
+  .contact_img {
+    float: left;
+    margin: 15px;
+  }
+
+  .contacts {
+    padding-top: 30px;
+  }
+
+  .contact_list {
+    margin-left: 150px;
+  }
+}
